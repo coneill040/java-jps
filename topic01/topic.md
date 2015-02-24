@@ -1,3 +1,4 @@
- Vivamus Elementum
+ #Programming Basics
 
- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+ I’ll assume you have very little knowledge in programming.  I want this content to provide anyone “walking in off the street” the knowledge to be able to write their first program with the Java programming language.
+

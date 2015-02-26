@@ -1,3 +1,3 @@
-Ligula Eget
+Event Driven Programming
 
- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+ Event driven programming is a more interactive way of creating applications and games with the Java Programming Language. We wil explore some of the basics of technologies such as JavaFX and Java Swing

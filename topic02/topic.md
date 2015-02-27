@@ -1,3 +1,4 @@
-Event Driven Programming
+ Java Basics
 
- Event driven programming is a more interactive way of creating applications and games with the Java Programming Language. We wil explore some of the basics of technologies such as JavaFX and Java Swing
+ In this topic we will explore the different concepts of the Java Programming Langueage from Variables and Data to Objects and Classes and lots in between.
+

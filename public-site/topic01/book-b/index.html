@@ -95,7 +95,9 @@ h3
           <li><a href= "#01" data-toggle="tab"> 01 </a> </li>
           <li><a href= "#02" data-toggle="tab"> 02 </a> </li>
           <li><a href= "#03" data-toggle="tab"> 03 </a> </li>
-          <li><a href= "#Ipsum" data-toggle="tab"> Ipsum </a> </li>
+          <li><a href= "#04" data-toggle="tab"> 04 </a> </li>
+          <li><a href= "#05" data-toggle="tab"> 05 </a> </li>
+          <li><a href= "#IQuiz" data-toggle="tab"> IQuiz </a> </li>
       </ul>
     </div>
   </div>
@@ -110,53 +112,19 @@ h3
   </div>
 
     <div class="tab-pane fade" id="01">
-      <h1>Consectetuer</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      <h1>Developer Tools</h1>
+<p>There are lots of different ways in which you can write java programs, in order to write a computer program we use a development enviromnment called and Intergrated Developemy Environment IDE for short.</p>
+<p>There are lots od freeley available IDE's to allow you write and test your program's, we will look at just a few to keep things simple.</p>
+<h2>IDEs (Open Source)</h2>
 <ul>
-<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+<li><a href="http://www.bluej.org/">BlueJ</a></li>
+<li><a href="http://www.drjava.org/">DrJava</a></li>
+<li><a href="https://netbeans.org/">NetBeans</a></li>
+<li><a href="https://www.eclipse.org/downloads/packages/">Eclipse</a></li>
 </ul>
-<p><img alt="" src="img/02.jpg"> </p>
-<ul>
-<li>
-<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-</li>
-<li>
-<p>Nullam dictum felis eu pede mollis pretium.</p>
-</li>
-</ul>
-<pre><code>package mypackage;
-
-import de.svenjacobs.loremipsum.LoremIpsum;
-
-public class MyClass 
-{
-  private LoremIpsum loremIpsum;
-
-  public MyClass() 
-  {
-    this.loremIpsum = new LoremIpsum();
-  }
-
-  public MyData createDummyData() 
-  {
-    MyData data = new MyData();
-
-    // returns 50 words of lorem ipsum text
-    data.setText( loremIpsum.getWords( 50 ) );
-
-    // returns 150 words of lorem ipsum text starting with
-    // the third word (text will not begin with &quot;Lorem ipsum&quot;)
-    data.setAnotherText( loremIpsum.getWords( 150, 2 ) );
-
-    // returns two paragraphs of lorem ipsum
-    data.setYetAnotherText( loremIpsum.getParagraphs( 2 ) );
-
-    return data;
-  }
-}
-</code></pre>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<p>We will work two of the IDE's, BlueJ and Eclpise</p>
+<h2>Download IDE's</h2>
+<p>Vist the <a href="http://www.bluej.org/">BlueJ</a> page and download and install the application, also, visit the <a href="https://eclipse.org/downloads/packages/eclipse-ide-java-developers/lunasr2">Eclipse</a> site and download and install Eclipse for your PC/Mac, the lastest package is Luna so follow <a href="https://eclipse.org/downloads/packages/eclipse-ide-java-developers/lunasr2">this link</a>  above and download and install.</p>
     </div>
     <div class="tab-pane fade" id="02">
       <h1>Aenean</h1>
@@ -220,7 +188,53 @@ public class MyClass
 <h2>Donec</h2>
 <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
     </div>
-    <div class="tab-pane fade" id="Ipsum">
+    <div class="tab-pane fade" id="04">
+      <h1>Dolor</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<pre><code>output = loremIpsum({
+    count: 1                      // Number of words, sentences, or paragraphs to generate. 
+  , units: 'sentences'            // Generate words, sentences, or paragraphs. 
+  , sentenceLowerBound: 5         // Minimum words per sentence. 
+  , sentenceUpperBound: 15        // Maximum words per sentence. 
+  , paragraphLowerBound: 3        // Minimum sentences per paragraph. 
+  , paragraphUpperBound: 7        // Maximum sentences per paragraph. 
+  , format: 'plain'               // Plain text or html 
+  , words: ['ad', 'dolor', ... ]  // Custom word dictionary. Uses dictionary.words (in lib/dictionary.js) by default. 
+  , random: Math.random           // A PRNG function. Uses Math.random by default 
+});
+</code></pre>
+
+<ul>
+<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+</ul>
+<p><img alt="" src="img/03.jpg"> </p>
+<h2>Donec</h2>
+<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+    </div>
+    <div class="tab-pane fade" id="05">
+      <h1>Dolor</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<pre><code>output = loremIpsum({
+    count: 1                      // Number of words, sentences, or paragraphs to generate. 
+  , units: 'sentences'            // Generate words, sentences, or paragraphs. 
+  , sentenceLowerBound: 5         // Minimum words per sentence. 
+  , sentenceUpperBound: 15        // Maximum words per sentence. 
+  , paragraphLowerBound: 3        // Minimum sentences per paragraph. 
+  , paragraphUpperBound: 7        // Maximum sentences per paragraph. 
+  , format: 'plain'               // Plain text or html 
+  , words: ['ad', 'dolor', ... ]  // Custom word dictionary. Uses dictionary.words (in lib/dictionary.js) by default. 
+  , random: Math.random           // A PRNG function. Uses Math.random by default 
+});
+</code></pre>
+
+<ul>
+<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+</ul>
+<p><img alt="" src="img/03.jpg"> </p>
+<h2>Donec</h2>
+<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+    </div>
+    <div class="tab-pane fade" id="IQuiz">
       <h1>Ipsum</h1>
 <h2>Donec pede</h2>
 <p>Aenean commodo ligula eget dolor.:</p>

@@ -97,7 +97,7 @@ h3
           <li><a href= "#03" data-toggle="tab"> 03 </a> </li>
           <li><a href= "#04" data-toggle="tab"> 04 </a> </li>
           <li><a href= "#05" data-toggle="tab"> 05 </a> </li>
-          <li><a href= "#IQuiz" data-toggle="tab"> IQuiz </a> </li>
+          <li><a href= "#Quiz" data-toggle="tab"> Quiz </a> </li>
       </ul>
     </div>
   </div>
@@ -122,37 +122,40 @@ h3
 <li><a href="https://netbeans.org/">NetBeans</a></li>
 <li><a href="https://www.eclipse.org/downloads/packages/">Eclipse</a></li>
 </ul>
-<p>We will work two of the IDE's, BlueJ and Eclpise</p>
+<p>We will work with two of the IDE's, BlueJ and Eclpise</p>
 <h2>Download IDE's</h2>
 <p>Vist the <a href="http://www.bluej.org/">BlueJ</a> page and download and install the application, also, visit the <a href="https://eclipse.org/downloads/packages/eclipse-ide-java-developers/lunasr2">Eclipse</a> site and download and install Eclipse for your PC/Mac, the lastest package is Luna so follow <a href="https://eclipse.org/downloads/packages/eclipse-ide-java-developers/lunasr2">this link</a> and download and install.</p>
     </div>
     <div class="tab-pane fade" id="02">
-      <h1>BlueJ</h1>
-<p><img alt="" src="img/01.png"> </p>
-<p>You should have BlueJ installed now, but just in case you done have a look <a href="http://www.bluej.org/download/install.html">here</a> for some install instructions. If you still have problems have look <a href="http://www.bluej.org/faq.html">here</a></p>
+      <h1>IDE Setup</h1>
+<p><img alt="" src="img/04.png"></p>
+<h2>Eclipse V's BlueJ</h2>
+<p>Elipse is much more complicated than BlueJ but if you stick to the basics it will do the same job as BlueJ, however BlueJ is more suited to people who have never coded before or may find it better because it gives a more visual representation of you projects and its classes. (more on that later)</p>
+<h2>Different ways to run BlueJ</h2>
+<p>You can run BlueJ from you PC/Mac or run it from your USB pen, we will have a look a the BlueJ set from a USB pen first.</p>
+<p><img alt="" src="img/03.png"></p>
+<p>To run BlueJ from your USB pen drive download <a href="https://moodle.wit.ie/draftfile.php/43413/user/draft/799448923/Course_IDE_-_Version_3.0.2.zip">this zip file</a> to your pen Drive and un-zip the file, you will now have two new folders called BlueJ and JDK1.6_0.7</p>
+<ul>
+<li>In the BlueJ folder you can run the BlueJ.exe program (<strong>Note: </strong> you can create a shortcur to this exe)</li>
+<li>Choose the Advanced Option</li>
+<li>Click "Browse for a specific java version"</li>
+<li>Navigate to the <strong>JDK1.6_0.7</strong> folder then the <strong>bin</strong> folder and select the java.exe program (this is the JDK)</li>
+<li>BlueJ should open now and your ready to start writing Java Programs</li>
+</ul>
+<p><img alt="" src="img/05.png"></p>
+<p>You can take the same steps above to download and Install BlueJ to your PC/Mac</p>
+<h2>Eclipse</h2>
+<p>Its better if you have the latest version of Eclipse (Luna when writing this) you can download it from <a href="https://www.eclipse.org/downloads/packages/">here</a></p>
+<p>Installation is straight forward, just download the latest version of the IDE for java Developers for your platform i.e. Mac or windows and then open the download and take the default options to proceed with the install</p>
+<p><img alt="" src="img/06.png"></p>
     </div>
     <div class="tab-pane fade" id="03">
-      <h1>Dolor</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-<pre><code>output = loremIpsum({
-    count: 1                      // Number of words, sentences, or paragraphs to generate. 
-  , units: 'sentences'            // Generate words, sentences, or paragraphs. 
-  , sentenceLowerBound: 5         // Minimum words per sentence. 
-  , sentenceUpperBound: 15        // Maximum words per sentence. 
-  , paragraphLowerBound: 3        // Minimum sentences per paragraph. 
-  , paragraphUpperBound: 7        // Maximum sentences per paragraph. 
-  , format: 'plain'               // Plain text or html 
-  , words: ['ad', 'dolor', ... ]  // Custom word dictionary. Uses dictionary.words (in lib/dictionary.js) by default. 
-  , random: Math.random           // A PRNG function. Uses Math.random by default 
-});
-</code></pre>
-
-<ul>
-<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
-</ul>
-<p><img alt="" src="img/03.jpg"> </p>
-<h2>Donec</h2>
-<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+      <h1>BlueJ Basics</h1>
+<p>You should have BlueJ installed now, but just in case you done have a look <a href="http://www.bluej.org/download/install.html">here</a> for some install instructions. If you still have problems have look <a href="http://www.bluej.org/faq.html">here</a></p>
+<p><img alt="" src="img/01.png"></p>
+<h2>The Complile process</h2>
+<p>When we write and run programs in java we must go through the <a href="http://www.oracle.com/technetwork/java/compile-136656.html">compile progrss.</a> When we write java program (lets say the HellowWorld.java) we create a file with the .java extension, through our IDE we complie this program but behind the scences the JDK will create another file called a class file which contains bytecode, we then run this bytecode through the Java Virtual Machine (the Java VM) which gives us out output or result, see image below.</p>
+<p><img alt="" src="img/02.png"></p>
     </div>
     <div class="tab-pane fade" id="04">
       <h1>Dolor</h1>
@@ -200,7 +203,7 @@ h3
 <h2>Donec</h2>
 <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
     </div>
-    <div class="tab-pane fade" id="IQuiz">
+    <div class="tab-pane fade" id="Quiz">
       <h1>Ipsum</h1>
 <h2>Donec pede</h2>
 <p>Aenean commodo ligula eget dolor.:</p>

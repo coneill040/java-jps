@@ -1,0 +1,319 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   
+     <title> Java Libraies </title>
+   
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="./style/semantic/semantic.min.css" type="text/css">
+     <script src="./style/custom/jquery-2.1.0.min.js"></script> 
+     <script src="./style/custom/jquery.address-1.6.min.js"></script>
+     <script src="./style/semantic/semantic.min.js"></script>
+   
+     <link rel="stylesheet" href="./style/highlight/solarized_light.css">
+     <script src="./style/highlight/highlight.pack.js"></script> 
+     <script>hljs.initHighlightingOnLoad();</script>
+
+    <style>
+
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+#container
+{
+  margin :10px
+}
+
+code
+{
+	font-family: "Monaco";
+	font-size: 110%;
+}
+
+h1 
+{
+  font-style:italic;
+  font-size:120%;
+  border-bottom: thin solid black;
+}
+h2 
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3 
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+#footertext 
+{
+  font-size:70%
+}
+
+#title 
+{
+  font-size:120%;
+  color: black;
+  text-align: right;
+  background-color : white;
+}
+
+img 
+{
+   padding:1px;
+   border:1px solid black;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+header img
+{
+	 padding:1px;
+   border:0px solid black;
+}
+
+header h1
+{
+  font-style:normal;
+  font-size:120%;
+  border-bottom: 0px;
+}
+
+header h2
+{
+  font-style:normal;
+  font-size:100%;
+  border-bottom: 0px;
+}
+
+header h3
+{
+  font-style:normal;
+  font-size:90%;
+  border-bottom: 0px;
+}
+
+.cover
+{
+    width: 290px;
+    height: 290px;
+    border:1px solid lightgray;
+}
+.image-thumbnail
+{
+    height: 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+}
+
+#container .card .description {
+  min-height: 200px;
+}
+
+    </style>
+
+  </head>
+  <body>
+  <nav class="ui fixed top pointing borderless inverted menu">
+    <header class="header item"> Event Driven Programming </header>
+    <div class="right tab-menu menu">
+          <a class="item" data-tab="Java Libraies"> Java Libraies </a>
+          <a class="item" data-tab="01"> 01 </a>
+          <a class="item" data-tab="02"> 02 </a>
+          <a class="item" data-tab="03"> 03 </a>
+          <a class="item" data-tab="Ipsum"> Ipsum </a>
+    </div>
+  </nav>
+
+  <br>
+
+	  <section data-tab="Java Libraies" class="ui tab stacked moodle-book segment">
+	     <h1>Java Libraries</h1>
+<p>The Java Libraries (the Java API) is fundimental is Java programming, in this lab we have a look at how it wirks and how to use it.</p>
+	  </section>
+	  <section data-tab="01" class="ui tab stacked moodle-book segment">
+	     <h1>Consectetuer</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<ul>
+<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+</ul>
+<p><img alt="" src="img/02.jpg"> </p>
+<ul>
+<li>
+<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+</li>
+<li>
+<p>Nullam dictum felis eu pede mollis pretium.</p>
+</li>
+</ul>
+<pre><code>package mypackage;
+
+import de.svenjacobs.loremipsum.LoremIpsum;
+
+public class MyClass 
+{
+  private LoremIpsum loremIpsum;
+
+  public MyClass() 
+  {
+    this.loremIpsum = new LoremIpsum();
+  }
+
+  public MyData createDummyData() 
+  {
+    MyData data = new MyData();
+
+    // returns 50 words of lorem ipsum text
+    data.setText( loremIpsum.getWords( 50 ) );
+
+    // returns 150 words of lorem ipsum text starting with
+    // the third word (text will not begin with &quot;Lorem ipsum&quot;)
+    data.setAnotherText( loremIpsum.getWords( 150, 2 ) );
+
+    // returns two paragraphs of lorem ipsum
+    data.setYetAnotherText( loremIpsum.getParagraphs( 2 ) );
+
+    return data;
+  }
+}
+</code></pre>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+	  </section>
+	  <section data-tab="02" class="ui tab stacked moodle-book segment">
+	     <h1>Aenean</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<pre><code>&lt;ol&gt;
+   &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+   &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+   &lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ol&gt;
+
+</code></pre>
+
+<ul>
+<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+</ul>
+<p><img alt="" src="img/01.png"> </p>
+<ul>
+<li>
+<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+</li>
+<li>
+<p>Nullam dictum felis eu pede mollis pretium.</p>
+</li>
+</ul>
+<pre><code>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Lorum ipsum dolor sit amet&quot;&gt;Lorem&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Aliquam tincidunt mauris eu risus&quot;&gt;Aliquam&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Morbi in sem quis dui placerat ornare&quot;&gt;Morbi&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Praesent dapibus, neque id cursus faucibus&quot;&gt;Praesent&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#nowhere&quot; title=&quot;Pellentesque fermentum dolor&quot;&gt;Pellentesque&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<h2>Donec</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<h2>Donec</h2>
+<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+	  </section>
+	  <section data-tab="03" class="ui tab stacked moodle-book segment">
+	     <h1>Dolor</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+<pre><code>output = loremIpsum({
+    count: 1                      // Number of words, sentences, or paragraphs to generate. 
+  , units: 'sentences'            // Generate words, sentences, or paragraphs. 
+  , sentenceLowerBound: 5         // Minimum words per sentence. 
+  , sentenceUpperBound: 15        // Maximum words per sentence. 
+  , paragraphLowerBound: 3        // Minimum sentences per paragraph. 
+  , paragraphUpperBound: 7        // Maximum sentences per paragraph. 
+  , format: 'plain'               // Plain text or html 
+  , words: ['ad', 'dolor', ... ]  // Custom word dictionary. Uses dictionary.words (in lib/dictionary.js) by default. 
+  , random: Math.random           // A PRNG function. Uses Math.random by default 
+});
+</code></pre>
+
+<ul>
+<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+</ul>
+<p><img alt="" src="img/03.jpg"> </p>
+<h2>Donec</h2>
+<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
+	  </section>
+	  <section data-tab="Ipsum" class="ui tab stacked moodle-book segment">
+	     <h1>Ipsum</h1>
+<h2>Donec pede</h2>
+<p>Aenean commodo ligula eget dolor.:</p>
+<pre><code>git checkout -b lorem
+</code></pre>
+
+<h2>Donec pede</h2>
+<p>Pretium quis, sem.:</p>
+<pre><code>$ git branch --set-upstream-to=origin/lorem ipsum-client
+</code></pre>
+	  </section>
+<script>
+
+function addCaptions() {
+  var images = $(".moodle-book img");
+  jQuery.each(images, function(i)  {
+    if((images[i].alt).length > 0) 
+    {
+      var div_img = $(document.createElement("div")).addClass("ui segment");
+      $(images[i]).wrap(div_img);
+      var div_label = $(document.createElement("div")).addClass("ui ribbon teal top attached label");
+      div_label.append(images[i].alt);
+      $(div_label).insertBefore(images[i]);
+    }
+  });
+};
+
+// Need to check if we have already been loaded
+seen = 0;
+
+$(document).ready(function()
+{ 
+  if (seen == 0)
+  { 
+    // not loaded before - so do the restyling once (need to moodle book print)
+    $(".moodle-book img").addClass ("ui image");
+    $(".moodle-book pre").addClass ("ui segment");
+    addCaptions();
+    seen = 1;
+  }
+
+
+})</script>
+  <br>  
+  <div class="ui fixed bottom borderless menu">'
+    <div class="ui small item"> 
+    <p id="footertext">
+    Prepared by  Conor O'Neill (cponeill@wit.ie)
+. Except where otherwise noted, this content is licensed under a  
+     <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/" 
+       target="_blank">Creative Commons Attribution-NonCommercial 4.0 License
+     </a>
+     </p>
+    </div>
+  </div>   
+    
+  <script>
+    $(document).ready(function()
+    {  
+      $('.tab-menu.menu .item').tab();
+    });
+  </script>   
+  </body>
+ </html>
